@@ -1,0 +1,24 @@
+.input-label {
+    margin-bottom: 0.5rem;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    outline: blue;
+    transition: border-color 0.3s;
+    color: black;
+}
+
+.input-field:focus {
+    border-color: #3490dc;
+    
+}
+
+.resume-container {
+    max-width: 800px; /* Fixed width for the resume */
+    margin: 0 auto;
+    padding: 20px;
+  }

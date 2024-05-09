@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resumeeee Maker</title>
+    <!-- Link to Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to your custom CSS file -->
+    <link href="/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <header id="header-id" class="bg-gray-800 text-white py-4 flex">
+      <div class="container mx-auto flex gap-4 ml-5">
+        <img class="w-8 h-8 bg-white" src="/pbl/assets/images/curriculum-vitae.png" alt="">
+        <h1 class="text-2xl font-bold">Resume Builder</h1>
+      </div>
+
+        <div>
+
+          <ul class="flex gap-4 mr-8">
+            <li class="font-semibold text-xl hover:text-blue-300"> <a href="/pbl/homepage.html">Home</a> </li>
+            <li class="font-semibold text-xl hover:text-blue-300">
+              <a href="/pbl/resume.html">CV</a>
+            </li>
+            <li class="font-semibold text-xl hover:text-blue-300">
+              <a href="/pbl/about.html">About</a>
+            </li>
+          </ul>
+
+        </div>
+      
+    </header>
+    <!-- <nav class = "navbar bg-slate-950">
+      <div class="container">
+          <div class = "navbar-content">
+              <div class = "brand-and-toggler">
+                  <a href = "index.html" class = "navbar-brand">
+                      <img src = "assets/images/curriculum-vitae.png" alt = "" class = "navbar-brand-icon bg-white">
+                      <span class = "navbar-brand-text text-white">build <span>resume.</span>
+                  </a>
+                  <button type = "button" class = "navbar-toggler-btn">
+                      <div class = "flex text-white bold gap-6">
+                          <a href="/pbl/homepage.html"><div class = "font-semibold hover:text-blue-600 ">Home</div></a>
+                          <a href="/pbl/resume.html"><div class = "font-semibold hover:text-blue-600 ">Template</div></a>
+                          <a href="./pbl/about.html"><div class = "font-semibold hover:text-blue-600 ">About</div></a>
+                          <a href="/"><div class = "font-semibold hover:text-blue-600 ">Resume</div></a>
+                          
+                      </div>
+                  </button>
+              </div>
+          </div>
+      </div>
+  </nav> -->
+
+    <!-- -------------------------------- -->
+    <main class="container mx-auto py-4">
+      <form id="resume-form" class="w-10/12  mx-auto">
+        <div
+          class="flex mx-auto gap-4 justify-between container bg-slate-900 text-gray-300 rounded-md"
+        >
+          <div class="p-4 my-4 mx-8 w-1/2">
+            <h1 class="text-2xl font-semibold mb-2 text-center uppercase">Personal Information</h1>
+            <div class="mb-4">
+              <label for="firstName" class="input-label flex items-center text-lg font-semibold "
+                ><span class="material-symbols-outlined"> person </span>User
+                Name</label
+              >
+              <input
+                type="text"
+                id="user-name"
+                name="firstName"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="contactInfo" class="input-label flex items-center text-lg font-semibold "
+                ><span class="material-symbols-outlined"> call </span>Contact
+                Number</label
+              >
+              <input
+                type="text"
+                id="contactInfo"
+                name="contactInfo"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="address" class="input-label flex items-center text-lg font-semibold "
+                ><span class="material-symbols-outlined"> home </span
+                >Address</label
+              >
+              <input
+                type="text"
+                id="address"
+                name="address"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="input-label flex items-center text-lg font-semibold gap-1"
+                ><span class="material-symbols-outlined"> mail </span
+                >Email</label
+              >
+              <input
+                type="text"
+                id="email"
+                name="email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="profilePic" class="input-label flex items-center text-lg font-semibold gap-1"
+                ><span class="material-symbols-outlined">
+                  add_photo_alternate </span
+                >Profile Picture</label
+              >
+              <input
+                type="file"
+                id="profile-pic"
+                name="profilePic"
+                class="input-field text-gray-300"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="website" class="input-label flex items-center text-lg font-semibold gap-1"
+                ><span class="material-symbols-outlined">
+                  language
+                  </span>Linkdin</label
+              >
+              <input
+                type="text"
+                id="website"
+                name="website"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="profile-info" class="input-label flex items-center text-lg font-semibold gap-1"
+                ><span class="material-symbols-outlined">
+                  person_book
+                  </span>Bio Info</label
+              >
+              <input
+                type="text"
+                id="profile-info"
+                name="profile-info"
+                class="input-field"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="p-4 my-4 mx-8 w-1/2">
+            <h1 class="text-2xl font-semibold mb-2 uppercase text-center">
+              Professional Info
+            </h1>
+            <div class="mb-4">
+              <label for="profession" class="input-label flex items-center text-lg font-semibold gap-1"
+                ><span class="material-symbols-outlined">
+                  work
+                  </span></i>Profession</label
+              >
+              <input
+                type="text"
+                id="profession"
+                name="profession"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="workExperience" class="input-label flex items-center text-lg font-semibold gap-1"
+                ><span class="material-symbols-outlined">
+                  diversity_2
+                  </span>Work Experience</label
+              >
+              <input
+                type="text"
+                id="workExperience"
+                name="workExperience"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="education" class="input-label flex items-center text-lg font-semibold gap-1"
+                ><span class="material-symbols-outlined">
+                  school
+                  </span>Education</label
+              >
+              <input
+                type="text"
+                id="education"
+                name="education"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="university" class="input-label flex items-center text-lg font-semibold gap-1"
+                ><span class="material-symbols-outlined">
+                  account_balance
+                  </span>University</label
+              >
+              <input
+                type="text"
+                id="university"
+                name="university"
+                class="input-field"
+                required
+              />
+            </div>
+            <!-- <div class="mb-4">
+              <label for="project" class="input-label flex items-center"
+                ><i class="fas fa-tasks mr-2"></i>Project</label
+              >
+              <input
+                type="text"
+                id="project"
+                name="project"
+                class="input-field"
+                required
+              />
+            </div> -->
+
+            <!-- skill div -->
+            <div>
+              <section id="skills-section">
+                <div class="mb-4">
+                  <label for="skill" class="input-label flex items-center text-lg font-semibold gap-1"
+                    ><span class="material-symbols-outlined">
+                      laptop_chromebook
+                      </span>Skills</label
+                  >
+                  <input
+                    type="text"
+                    id="skills"
+                    name="skill"
+                    class="input-field"
+                    required
+                  />
+                </div>
+              </section>
+
+              <div class="text-center">
+                <button
+                type="button"
+                id="add-skill"
+                class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 "
+              >
+              <span class="material-symbols-outlined ">
+                add_box
+                </span>
+              </button>
+              </div>
+            </div>
+            <!-- Project div -->
+            <div>
+              <section id="projects-section">
+                <div class="mb-4">
+                  <label for="project" class="input-label flex items-center text-lg font-semibold gap-1"
+                    ><span class="material-symbols-outlined">
+                      rocket_launch
+                      </span>Projects</label
+                  >
+                  <input
+                    type="text"
+                    id="projects"
+                    name="project"
+                    class="input-field"
+                    required
+                  />
+                </div>
+              </section>
+
+             <div class="text-center">
+              <button
+              type="button"
+              id="add-project"
+              class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+            >
+            <span class="material-symbols-outlined ">
+              add_box
+              </span>
+            </button>
+             </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="text-center font-semibold m-2">
+        <button
+        type="submit"
+        class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-600"
+      >
+        Generate Resume
+      </button>
+      </div>
+        <!-- <button
+          type="button"
+          id="print-butto"
+          class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+        >
+          Print
+        </button> -->
+      </form>
+      <div id="resume-preview" class="mt-8 hidden">
+        <h2 class="text-xl font-semibold mb-4">Preview Your Resume</h2>
+        <div id="resume-content" class="border p-4"></div>
+      </div>
+
+      <div id="download-btn" class="gap-2 text-center mx-auto hidden">
+        <button
+          type="button"
+          id="print-button"
+          class="bg-green-500 font-semibold text-white px-4 py-2 rounded hover:bg-green-600"
+        >
+          Download
+        </button>
+
+        <button
+          type="button"
+          id="make-button"
+          class="bg-red-500 text-white px-4 py-2 rounded font-semibold hover:bg-green-600"
+        >
+          <a href="/index.html">Make Another</a>
+        </button>
+      </div>
+    </main>
+
+    <!-- download hr  -->
+
+    <footer id="footer-id" class="bg-gray-800 text-white py-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 Resume Maker</p>
+      </div>
+    </footer>
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
